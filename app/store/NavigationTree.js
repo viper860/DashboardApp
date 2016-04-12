@@ -115,6 +115,35 @@ Ext.define('Admin.store.NavigationTree', {
                 iconCls: 'x-fa fa-pie-chart',
                 viewType: 'charts',
                 leaf: true
+            },
+            {
+                text: 'Member',
+                iconCls: 'x-fa fa-user',
+                expanded: false,
+                selectable: false,
+                children: [
+                    {
+                        text: 'Member',
+                        iconCls: 'no-icon',
+                        viewType: 'pageblank',
+                        leaf: true
+                    },
+                    {
+                        text: 'Member Portal Users',
+                        iconCls: 'no-icon',
+                        viewType: 'pageblank',
+                        leaf: true
+                    },
+                    {
+                        text: 'COBC',
+                        iconCls: 'no-icon',
+                        viewType: 'pageblank',
+                        leaf: true
+                    }
+
+
+                ]
+            
             }
         ]
     }
